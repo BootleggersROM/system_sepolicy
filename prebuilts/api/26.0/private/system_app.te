@@ -40,6 +40,10 @@ userdebug_or_eng(`set_prop(system_app, logpersistd_logging_prop)')
 auditallow system_app net_radio_prop:property_service set;
 auditallow system_app system_radio_prop:property_service set;
 
+# theme property
+get_prop(system_app, theme_prop)
+set_prop(system_app, theme_prop)
+
 # ctl interface
 set_prop(system_app, ctl_default_prop)
 set_prop(system_app, ctl_bugreport_prop)
